@@ -1,0 +1,63 @@
+IF
+Global("CbAngryVillagersRevolt","GLOBAL",2)
+OR(2)
+GlobalGT("CbPartySidedSoldiers","AR1000",0)
+GlobalGT("CbPartySidedVillagers","AR1000",0)
+THEN
+RESPONSE #100
+SetGlobal("CbAngryVillagersRevolt","GLOBAL",3)
+Continue()
+END
+
+IF
+GlobalGT("ElhanFinishedSpeaking","GLOBAL",0)
+Global("CbAngryVillagersRevolt","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CbAngryVillagersRevolt","GLOBAL",1)
+CreateCreature("CBAVRCWa",[2509.396],NE)
+CreateCreature("CBAVRCWb",[2568.425],E)
+CreateCreature("CBAVRCWc",[2525.432],SW)
+CreateCreature("m05pcspy",[2536.402],S)
+CreateCreature("CBAVRVLa",[2462.331],NWW)
+CreateCreature("CBAVRVLc",[2538.307],NW)
+CreateCreature("CBAVRVLd",[2605.345],N)
+CreateCreature("CBAVRVLe",[2403.384],SWW)
+CreateCreature("CBAVRVLd",[2420.412],SSW)
+CreateCreature("CBAVRVLb",[2409.453],S)
+CreateCreature("CBAVRVLc",[2439.498],SSE)
+CreateCreature("CBAVRVLe",[2502.471],S)
+CreateCreature("CBAVRVLd",[2518.510],E)
+CreateCreature("CBAVRVLc",[2597.486],SE)
+CreateCreature("CBAVRVLf",[2666.427],NNE)
+CreateCreature("CBAVRVLe",[2625.335],NE)
+CreateCreature("CBAVRVLc",[2683.371],N)
+CreateCreature("CBAVRSLa",[2328.498],S)
+CreateCreature("CBAVRSLb",[2374.561],S)
+CreateCreature("CBAVRSLc",[2522.573],S)
+CreateCreature("CBAVRSLd",[2731.535],S)
+CreateCreature("CBAVRSLa",[2759.403],S)
+CreateCreature("CBAVRSLa",[2710.265],S)
+CreateCreature("CBAVRSLa",[2486.151],S)
+CreateCreature("CBAVRSLb",[2550.148],S)
+CreateCreature("CBAVRSLc",[2343.270],S)
+CreateCreature("CBAVRSLe",[2444.603],S)
+CreateCreature("CBAVRSLf",[2742.318],S)
+CreateCreature("CBAVRSLf",[2416.227],S)
+CreateCreature("CBAVRSLf",[2605.210],S)
+CreateCreature("CBAVRSLf",[2584.563],S)
+CreateCreature("CBAVRSLf",[2652.538],S)
+CreateCreature("CBAVRSLg",[2519.606],S)
+Wait(1)
+Continue()
+END
+
+
+
+IF
+	Global("CbAngryVillagersRevolt","GLOBAL",4)
+THEN
+	RESPONSE #100
+		ActionOverride("m05pcspy",EscapeAreaDestroy(90))
+		Continue()
+END

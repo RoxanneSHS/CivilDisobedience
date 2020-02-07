@@ -1,0 +1,31 @@
+BACKUP ~disobedience/backup~
+AUTHOR ~Roxanne@baldursextendedworld.com based on a Charles Bisson's CtB quest~
+
+AUTO_TRA ~disobedience/TRA~
+
+VERSION ~v0.1~
+
+LANGUAGE ~English~ ~english~ ~disobedience/TRA/setup.tra~
+
+BEGIN ~Civil Disobedience~
+
+COPY ~disobedience/bmp~ ~override~
+COPY ~disobedience/cre2~ ~override~
+
+COPY ~disobedience/cre/CBAVRVLA.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLB.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLC.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLD.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLE.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLF.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLG.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLH.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLI.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLJ.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLK.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+COPY ~disobedience/cre/CBAVRVLM.CRE~ ~override~ SAY NAME1 @18    SAY NAME2 @18
+
+COMPILE ~disobedience/baf~
+COMPILE ~disobedience/d~
+
+EXTEND_TOP ~ar1000.bcs~ ~disobedience/Extend/ar1000.baf~
