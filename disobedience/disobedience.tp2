@@ -1,11 +1,12 @@
 BACKUP ~disobedience/backup~
 AUTHOR ~Roxanne@baldursextendedworld.com based on a Charles Bisson's CtB quest~
 
-AUTO_TRA ~disobedience/TRA~
+AUTO_TRA ~disobedience/TRA/%s~
 
-VERSION ~v0.1~
+VERSION ~v0.2~
 
-LANGUAGE ~English~ ~english~ ~disobedience/TRA/setup.tra~
+LANGUAGE ~English~ ~english~ ~disobedience/TRA/English/setup.tra~
+LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~disobedience/TRA/Russian/setup.tra~
 
 BEGIN ~Civil Disobedience~
 
