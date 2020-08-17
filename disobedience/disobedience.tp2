@@ -3,10 +3,11 @@ AUTHOR ~Roxanne@baldursextendedworld.com based on a Charles Bisson's CtB quest~
 
 AUTO_TRA ~disobedience/TRA/%s~
 
-VERSION ~v0.2~
+VERSION ~v0.3~
 
 LANGUAGE ~English~ ~english~ ~disobedience/TRA/English/setup.tra~
 LANGUAGE ~Russian (by Arcanecoast.ru)~ ~russian~ ~disobedience/TRA/Russian/setup.tra~
+LANGUAGE ~Deutsch~ ~german~ ~disobedience/TRA/German/setup.tra~
 
 BEGIN ~Civil Disobedience~
 
